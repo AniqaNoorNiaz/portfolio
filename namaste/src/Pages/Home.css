@@ -1,0 +1,87 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #e0e0e0; /* Light grey background for a subtle contrast */
+    overflow: hidden; /* Hide overflow for smoother animations */
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px; /* Increase max width */
+    margin: 30px;
+    min-height: 400px; /* Increase height for better balance */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.profile-box:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.profile-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Slight contrast */
+    padding: 30px;
+}
+
+.profile-pic img {
+    max-width: 100%;
+    border-radius: 15px; /* Rounded corners for image */
+    border: 3px solid #d0d0d0; /* Light border around image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.profile-info {
+    flex: 2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa; /* Light background for text section */
+    border-left: 2px solid #d0d0d0; /* Border to separate from image */
+}
+
+.profile-info h1 {
+    margin: 0 0 20px 0; /* Adjust margin for spacing */
+    font-size: 2.5em; /* Larger font size */
+    font-style: italic;
+    color: #002f6c; /* Dark blue color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.profile-info h1:hover {
+    text-decoration: underline; /* Underline on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.profile-info p {
+    font-size: 1.3em; /* Slightly larger font size */
+    color: #333333; /* Dark grey color */
+    font-style: oblique;
+    line-height: 1.8;
+    margin: 0; /* Reset margin */
+}
+
+.profile-info p:first-of-type {
+    margin-bottom: 20px; /* More space below first paragraph */
+}
+
+.profile-info p:last-of-type {
+    margin-top: 20px; /* Space above last paragraph */
+}

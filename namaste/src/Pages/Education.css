@@ -1,0 +1,47 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.education-container h1 {
+  font-size: 2.5em;
+  color: #0537ce;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.education-list,
+.courses-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.education-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.education-item h2 {
+  font-size: 1.5em;
+  color: #1100ff;
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  font-size: 1em;
+  color: #0d0505;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.education-item:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
